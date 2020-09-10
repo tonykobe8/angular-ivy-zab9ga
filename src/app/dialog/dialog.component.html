@@ -1,0 +1,15 @@
+<!-- <h3 ma-dialog-title> Are you sure you want to delete? <h2>
+  <mat-dialog-actions>
+          <button mat-raised-button mat-dialog-close mat-dialog-close="true">Delete</button>
+             <button mat-raised-button mat-dialog-close mat-dialog-close="false">Close</button>
+   <mat-dialog-actions>  -->
+
+     <mat-dialog-content>
+	<h2>
+		{{message}}
+	</h2>
+</mat-dialog-content>
+<mat-dialog-actions align="center">
+	<button mat-raised-button color="primary" (click)="onConfirmClick()" tabindex="1">{{confirmButtonText}}</button>
+	<button mat-raised-button mat-dialog-close tabindex="-1">{{cancelButtonText}}</button>
+</mat-dialog-actions>
